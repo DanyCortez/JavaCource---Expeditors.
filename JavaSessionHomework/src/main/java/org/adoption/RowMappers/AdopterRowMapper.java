@@ -43,15 +43,15 @@ public class AdopterRowMapper implements RowMapper<Adopter> {
 
             int idPet = rs.getInt("idPet");
 
-            if(idPet > 0) {
-                Pet.PetBuilder petBuilder = new Pet.PetBuilder()
-                      .setName(rs.getString("petName"))
-                     .setPetType(rs.getString("pettype"))
-                     .setBreedType(rs.getString("breedtype"))
-                     .setAdoptionDate(rs.getDate("adoptiondate").toLocalDate());
-
-                adopterBuilder.;
-            }
+//            if(idPet > 0) {
+//                Pet.PetBuilder petBuilder = new Pet.PetBuilder()
+//                      .setName(rs.getString("petName"))
+//                     .setPetType(rs.getString("pettype"))
+//                     .setBreedType(rs.getString("breedtype"))
+//                     .setAdoptionDate(rs.getDate("adoptiondate").toLocalDate());
+//
+//                adopterBuilder.;
+//            }
         }
 
     }

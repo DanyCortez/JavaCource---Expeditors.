@@ -3,11 +3,16 @@ package com.example.javasessionhomeworkjpa.service;
 import com.example.javasessionhomeworkjpa.clases.Pet;
 import com.example.javasessionhomeworkjpa.interfaces.IPetService;
 import com.example.javasessionhomeworkjpa.repositories.PetRepository;
+import jakarta.persistence.EntityNotFoundException;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class PetService implements IPetService {
 
+    @Autowired
     private final PetRepository petRepository;
 
     public PetService(PetRepository petRepository) {

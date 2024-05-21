@@ -58,7 +58,7 @@ public class AdopterService implements IAdopterService {
                 .orElseThrow(() -> new EntityNotFoundException("Adopter not found with id: " + adopterId));
 
         adopter.setName(updatedAdopter.getName());
-        adopter.setPhoneNumber(updatedAdopter.getPhoneNumber());
+        adopter.setPhone_number(updatedAdopter.getPhone_number());
 
         return adopterRepository.save(adopter);
     }
